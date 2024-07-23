@@ -11,6 +11,33 @@
 </head>
 
 <body class="bg-secondary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="nav-link active" aria-current="page" href=""><img src="img/logo/rali.png" width="90"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container w-75 card p-4 m-auto mt-4 mb-5 rounded-4 bg-light text-center shadow-lg">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -153,7 +180,7 @@
                         placeholder="Digite seu email">
                 </div>
                 <button onclick="calc()" type="submit" class="btn w-100 btn-primary fs-4">Calcular</button>
-                <div class="text-start fs-6" id="output"></div>
+                <div class="text-start" id="output"></div>
             </form>
         </div>
     </div>

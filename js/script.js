@@ -30,7 +30,7 @@ function calc() {
         var id = input.id;
         var total = prods[id - 1].price * parseFloat(input.value);
 
-        output.innerHTML += `<li>Prato: ${prods[id - 1].name}; Preço unitário: ${formatter.format(prods[id - 1].price)}; Quantidade: ${input.value}; Total: ${formatter.format(total)}</li>`;
+        output.innerHTML += `<li>Prato: ${prods[id - 1].name} - Preço unitário: ${formatter.format(prods[id - 1].price)} - Quantidade: ${input.value} - Total: ${formatter.format(total)}</li>`;
 
         result += total;
     }
