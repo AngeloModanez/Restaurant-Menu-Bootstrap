@@ -25,7 +25,7 @@ function calc() {
     }
 
     if (value > 0) {
-        output.innerHTML = `Caro <strong>${personName}</strong>, seguem os dados do seu pedido:</br></br>`;
+        output.innerHTML = `Caro(a) <strong>${personName}</strong>.</br>Seguem os dados do seu pedido:</br></br>`;
 
         for (var input of quantities) {
             if (input.value == 0) {
@@ -40,6 +40,6 @@ function calc() {
     }
 
     else {
-        output.innerHTML += `<h1 class="text center fs-3 fw-bold text-danger">Caro <strong>${personName}</strong>, SELECIONE UM PRATO</h1>`;
+        output.innerHTML = `<h4 class="fw-bold text-danger">Caro(a) <strong>${personName}</strong>.</br>Por Favor, Selecione um Prato:</h4>`;
     }
 }
