@@ -25,10 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="">Cardápio</a>
+                        <a class="nav-link" aria-current="page" href="#">Cardápio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="">Reservas</a>
+                        <a class="nav-link" aria-current="page" href="#">Reservas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="">Contato</a>
@@ -70,13 +70,14 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
         <label class="fs-2 mt-3 fw-semibold">Menu - Faça A Sua Escolha</label>
         <div class="card p-3 px-5 mt-3 m-5 rounded-4 bg-secondary-subtle shadow">
             <lebel class="fs-4 fw-semibold">Prato Principal</lebel>
             <lebel class="mb-3">Todos os pratos acompanham arroz, feijão e sobremesa do dia</lebel>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-4" src=" img/bife.jpg" />
                         <label class="fw-bolder">Bife com Batata</label>
                         <label class="fs-3 fw-bold text-success">R$ 30,00</label>
@@ -89,7 +90,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-4" src="img/coxa.jpg" />
                         <label class="fw-bolder">Coxa de Frango</label>
                         <label class="fs-3 fw-bold text-success">R$ 25,00</label>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-3" src="img/panela.jpg" />
                         <label class="fw-bolder">Carne de Panela</label>
                         <label class="fs-3 fw-bold text-success">R$ 22,00</label>
@@ -121,39 +122,39 @@
             <lebel class="mb-3">Porções para uma pessoa</lebel>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-4" src=" img/farofa.jpg" />
                         <label class="fw-bolder">Farofa</label>
                         <label class="fs-3 fw-bold text-success">R$ 10,00</label>
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-4" src="img/salada.jpg" />
                         <label class="fw-bolder">Salada</label>
                         <label class="fs-3 fw-bold text-success">R$ 8,00</label>
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-auto p-3 rounded-4 bg-secondary-subtle shadow">
+                    <div class="card m-1 p-3 rounded-4 bg-secondary-subtle shadow">
                         <img class="rounded-3" src="img/torresmo.jpg" />
                         <label class="fw-bolder">Torresmo</label>
                         <label class="fs-3 fw-bold text-success">R$ 12,00</label>
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -163,7 +164,7 @@
         </div>
         <div class="card p-3 px-5 mt-3 m-5 rounded-4 bg-secondary-subtle shadow">
             <lebel class="fs-3 fw-bold">Dados Pessoais</lebel>
-            <form class="text-start fs-5 m-5">
+            <form class="text-start m-5">
                 <div class="mb-4">
                     <label class="form-label">Nome Completo</label>
                     <input type="text" class="form-control border-2 border-dark-subtle" id="name"
@@ -179,10 +180,26 @@
                     <input type="email" class="form-control border-2 border-dark-subtle" id="email"
                         placeholder="Digite seu email">
                 </div>
-                <button onclick="calc()" type="submit" class="btn w-100 btn-primary fs-4">Calcular</button>
-                <div class="text-start" id="output"></div>
+                <button onclick="calc()" type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Calcular
+                </button>
             </form>
         </div>
+    </div>
+
+    <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-start">
+                <div class="modal-header">
+                    <h2 class="modal-title fw-bold" id="exampleModalLabel">Total do Pedido:</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-6" id="output"></div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="js/script.js"></script>
